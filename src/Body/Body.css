@@ -4,3 +4,23 @@
     align-items: center;
     gap: 20px;
   }
+
+  .toggle-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .workoutToggle {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.workoutToggle:hover {
+    background-color: #f73c27;
+    border-color: black;
+  }
