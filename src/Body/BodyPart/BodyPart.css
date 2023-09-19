@@ -1,0 +1,15 @@
+.body-part {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .body-part:hover {
+    background-color: #e74c3c;
+  }
