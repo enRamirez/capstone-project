@@ -1,0 +1,3 @@
+routes would be used to build the links in the navigation bar etc
+
+if the route is protected (protectedRoute), i will need to import the container and not the component

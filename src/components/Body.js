@@ -1,8 +1,16 @@
-import React from 'react';
-import BodyPart from './BodyPart/BodyPart';
+import React, { useState } from 'react';
 import './Body.css';
+import BodyPart from './BodyPart'
+import ToggleButton from '@mui/material/ToggleButton';
+import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
 
 const Body = () => {
+
+  const [alignment, setAlignment] = React.useState('stretches');
+
+  const handleChange = (event, newAlignment) => {
+    setAlignment(newAlignment);
+  };
 
   const [selectedOption, setSelectedOption] = useState('Stretches');
 
@@ -20,12 +28,23 @@ const Body = () => {
         </button>
       </div>
 
-      <div className="body-container">
+      <ToggleButtonGroup
+      color="primary"
+      value={alignment}
+      exclusive
+      onChange={handleChange}
+      aria-label="Platform"
+    >
+      <ToggleButton value="stretches">Stretches</ToggleButton>
+      <ToggleButton value="muscleStrength">Muscle Strength</ToggleButton>
+    </ToggleButtonGroup>
+
+      {/* <div className="body-container">
         <BodyPart partName={`${selectedOption} - Head`} />
         <BodyPart partName={`${selectedOption} - Torso`} />
         <BodyPart partName={`${selectedOption} - Legs`} />
         <BodyPart partName={`${selectedOption} = Arms`} />
-      </div>
+      </div> */}
     </div>
   );
 };
