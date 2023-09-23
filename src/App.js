@@ -1,9 +1,9 @@
 import React from 'react';
 import './App.css';
 import Body from './components/Body';
-import human from './components/Body.jpg'
-import human2 from './components/Body2.jpg'
-import { yellow } from '@mui/material/colors';
+// import human from './components/Body.jpg'
+// import human2 from './components/Body2.jpg'
+// import { yellow } from '@mui/material/colors';
 
 
 function App() {
@@ -13,8 +13,8 @@ function App() {
       {/* <img src= {human} /> */}
       <div>
         <div className='img-container'>
-          <img className='img2' alt='bodyImage' src= {human2} useMap="#image_map" />
-          <img className='img' alt='bodyImage' src= {human} useMap="#image_map" />
+          {/* <img className='img2' alt='bodyImage' src= {human2} useMap="#image_map" />
+          <img className='img' alt='bodyImage' src= {human} useMap="#image_map" /> */}
         </div>  
           <map name="image_map">
             <area alt="Knee" title="Knee" href="" coords="137,393,11" shape="circle" style={{backgroundColor: 'red', opacity: 0.7}} />

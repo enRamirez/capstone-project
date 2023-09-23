@@ -11,13 +11,21 @@
     margin-bottom: 20px;
   }
 
-  .workoutToggle {
-    background-color: #3498db;
-    color: white;
+  .button {
+    position: absolute;
+    background-color: #da3f47;
+    /* color: white;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease; */
+}
+
+.workoutToggle {
+  background-color: #ff0000; /* Replace '#ff0000' with the desired color code */
+  color: #ffffff; /* Change the text color if needed */
+  border: 1px solid #ff0000; /* Add a border if desired */
+  /* Other styles as needed */
 }
 
 .workoutToggle:hover {
