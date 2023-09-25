@@ -1,25 +1,17 @@
 .body-container {
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
     gap: 20px;
   }
 
   .toggle-container {
-    display: flex;
+    display: grid;
     justify-content: center;
     margin-bottom: 20px;
   }
 
-  .button {
-    position: absolute;
-    background-color: #da3f47;
-    /* color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: background-color 0.3s ease; */
-}
+
 
 .workoutToggle {
   background-color: #ff0000; /* Replace '#ff0000' with the desired color code */

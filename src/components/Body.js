@@ -55,9 +55,9 @@ const Body = () => {
 
       {/* this is how the image will be changed depending on the selected Focus */}
       {selectedOption === 'Stretches' ? (
-        <img className='img2' partName={`${selectedOption} - ${selectedOption}`} alt='bodyImage' src={human2} useMap="#image_map" />
+        <img className='img2' partName={`${selectedOption} - ${selectedOption}`} alt='bodyImage' src={human2} useMap="#image_map_stretches" />
       ) : (
-        <img className='img' partName={`${selectedOption} - ${selectedOption}`} alt='bodyImage' src={human} useMap="#image_map" />
+        <img className='img' partName={`${selectedOption} - ${selectedOption}`} alt='bodyImage' src={human} useMap="#image_map_muscles" />
       )}
 
     </div>
