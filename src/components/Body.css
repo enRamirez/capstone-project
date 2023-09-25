@@ -14,10 +14,10 @@
 
 
 .workoutToggle {
-  background-color: #ff0000; /* Replace '#ff0000' with the desired color code */
-  color: #ffffff; /* Change the text color if needed */
-  border: 1px solid #ff0000; /* Add a border if desired */
-  /* Other styles as needed */
+  background-color: #ff0000; 
+  color: #ffffff; 
+  border: 1px solid #ff0000; 
+ 
 }
 
 .workoutToggle:hover {

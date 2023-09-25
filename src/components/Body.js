@@ -6,10 +6,10 @@ import human from '../components/Body.jpg';
 import human2 from '../components/Body2.jpg';
 
 const Body = () => {
-  const [selectedOption, setSelectedOption] = useState('Stretches');
+  const [selectedOption, setSelectedOption] = useState('Joint Pain Exercises');
 
   const toggleOption = () => {
-    setSelectedOption(selectedOption === 'Stretches' ? 'Muscle Strength' : 'Stretches');
+    setSelectedOption(selectedOption === 'Joint Pain Exercises' ? 'Muscle Strength' : 'Joint Pain Exercises');
   };
 
   const handleChange = (event, newAlignment) => {
@@ -34,13 +34,13 @@ const Body = () => {
         aria-label="Platform"
       >
         <ToggleButton
-          value="Stretches"
+          value="Joint Pain Exercises"
           style={{
-            backgroundColor: selectedOption === 'Stretches' ? '#ff0000' : '#cccccc', 
-            color: selectedOption === 'Stretches' ? '#ffffff' : '#000000', 
+            backgroundColor: selectedOption === 'Joint Pain Exercises' ? '#ff0000' : '#cccccc', 
+            color: selectedOption === 'Joint Pain Exercises' ? '#ffffff' : '#000000', 
           }}
         >
-          Stretches
+          Joint Pain Exercises
         </ToggleButton>
         <ToggleButton
           value="Muscle Strength"
@@ -54,8 +54,8 @@ const Body = () => {
       </ToggleButtonGroup>
 
       {/* this is how the image will be changed depending on the selected Focus */}
-      {selectedOption === 'Stretches' ? (
-        <img className='img2' partName={`${selectedOption} - ${selectedOption}`} alt='bodyImage' src={human2} useMap="#image_map_stretches" />
+      {selectedOption === 'Joint Pain Exercises' ? (
+        <img className='img2' partName={`${selectedOption} - ${selectedOption}`} alt='bodyImage' src={human2} useMap="#image_map_joint_pain_exercises" />
       ) : (
         <img className='img' partName={`${selectedOption} - ${selectedOption}`} alt='bodyImage' src={human} useMap="#image_map_muscles" />
       )}

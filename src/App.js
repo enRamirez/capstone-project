@@ -16,18 +16,19 @@ function App() {
           {/* <img className='img2' alt='bodyImage' src= {human2} useMap="#image_map" />
           <img className='img' alt='bodyImage' src= {human} useMap="#image_map" /> */}
         </div>  
-          <map name="image_map_stretches">
+          <map name="image_map_joint_pain_exercises">
             <area alt="Knee" title="Knee" href="" coords="137,393,11" shape="circle"  />
             <area alt="Knee" title="Knee" href="" coords="186,391,11" shape="circle" />
             <area alt="Ankle" title="Ankle" href="" coords="144,521,10" shape="circle" />
             <area alt="Ankle" title="Ankle" href="" coords="179,522,9" shape="circle" />
             <area alt="Hips" title="Hips" href="" coords="119,242,205,277" shape="rect" />
-            <area alt="Wrist" title="Wrist" href="" coords="268,268,10" shape="circle" />
-            <area alt="Wrist" title="Wrist" href="" coords="58,266,11" shape="circle" />
+            <area alt="Wrist/Hand" title="Wrist/Hand" href="" coords="48,285,34" shape="circle" />
+            <area alt="Wrist/Hand" title="Wrist/Hand" href="" coords="274,290,34" shape="circle" />
             <area alt="Shoulder" title="Shoulder" href="" coords="107,125,22" shape="circle" />
             <area alt="Shoulder" title="Shoulder" href="" coords="216,124,21" shape="circle" />
             <area alt="Upper Back" title="Upper Back" href="" coords="431,92,469,179" shape="rect" />
             <area alt="Lower Back" title="Lower Back" href="" coords="430,184,467,268" shape="rect" />
+            <area alt="Neck" title="Neck" href="" coords="429,77,470,100" shape="rect" />
           </map>
         </div>
         <div>
@@ -46,6 +47,8 @@ function App() {
             <area alt="Deltoids" title="Deltoids" href="" coords="401,157 411,191 427,221 449,195 472,224 486,194 497,157 476,160 454,177 446,179 422,159 " shape="polygon" />
             <area alt="Triceps" title="Triceps" href="" coords="379,155,401,200" shape="rect" />
             <area alt="Triceps" title="Triceps" href="" coords="501,154,523,198" shape="rect" />
+            <area alt="Hamstrings" title="Hamstrings" href="" coords="407,307,440,377" shape="rect" />
+            <area alt="Hamstrings" title="Hamstrings" href="" coords="456,304,493,386" shape="rect" />
             <area alt="Gluts" title="Gluts" href="" coords="413,304 409,270 430,257 450,255 480,261 491,275 486,302 469,293 454,281 449,277 443,283 429,293 " shape="polygon" />
           </map>
         </div>
