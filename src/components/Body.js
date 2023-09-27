@@ -17,8 +17,8 @@ const Body = () => {
   };
 
   return (
-    <div>
-      <h1>Select Your Body Focus</h1>
+    <div className='main'>
+      <h1 className='title'>Select Your Body Focus</h1>
 
       {/* <div className='toggle-container'>
         <button className='workoutToggle' onClick={toggleOption}>
@@ -53,12 +53,13 @@ const Body = () => {
         </ToggleButton>
       </ToggleButtonGroup>
 
-      {/* this is how the image will be changed depending on the selected Focus */}
-      {selectedOption === 'Joint Pain Exercises' ? (
-        <img className='img2' partName={`${selectedOption} - ${selectedOption}`} alt='bodyImage' src={human2} useMap="#image_map_joint_pain_exercises" />
-      ) : (
-        <img className='img' partName={`${selectedOption} - ${selectedOption}`} alt='bodyImage' src={human} useMap="#image_map_muscles" />
-      )}
+      <div>    
+        {selectedOption === 'Joint Pain Exercises' ? (
+          <img className='img2' partName={`${selectedOption} - ${selectedOption}`} alt='bodyImage' src={human2} useMap="#image_map_joint_pain_exercises" />
+        ) : (
+          <img className='img' partName={`${selectedOption} - ${selectedOption}`} alt='bodyImage' src={human} useMap="#image_map_muscles" />
+        )}
+      </div>
 
     </div>
   );

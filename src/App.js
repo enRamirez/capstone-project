@@ -17,7 +17,7 @@ function App() {
           <img className='img' alt='bodyImage' src= {human} useMap="#image_map" /> */}
         </div>  
           <map name="image_map_joint_pain_exercises">
-            <area alt="Knee" title="Knee" href="" coords="137,393,11" shape="circle"  />
+            <area alt="Knee" title="Knee" href="" coords="137,393,11" shape="circle" />
             <area alt="Knee" title="Knee" href="" coords="186,391,11" shape="circle" />
             <area alt="Ankle" title="Ankle" href="" coords="144,521,10" shape="circle" />
             <area alt="Ankle" title="Ankle" href="" coords="179,522,9" shape="circle" />
