@@ -1,12 +1,19 @@
 import React from 'react';
 import './App.css';
 import Body from './components/Body';
+import { useEffect, useState } from "react"
 // import human from './components/Body.jpg'
 // import human2 from './components/Body2.jpg'
 // import { yellow } from '@mui/material/colors';
 
 
 function App() {
+
+  const [muscleGroups, setMuscleGroup] = useState("")
+  const muscleFetch = (e) => {
+    console.log(e.target.value)
+  }
+
   return (
     <div className='App'>
       <Body />
@@ -33,12 +40,12 @@ function App() {
         </div>
         <div>
           <map name="image_map_muscles">
+            <area alt="Biceps" title="Biceps" href="" coords="91,161 113,152 110,173 98,196 86,195 87,176 " shape="polygon" onClick={console.log('hello')} />
+            <area alt="Biceps" title="Biceps" href="" coords="214,152 228,156 235,173 234,197 215,178 " shape="polygon" />
             <area alt="Thighs" title="Legs" href="" coords="165,275,206,379" shape="rect" />
             <area alt="Thighs" title="Legs" href="" coords="118,274,150,381" shape="rect" />
             <area alt="Pectorals " title="Pectorals " href="" coords="134,123 188,124 209,153 162,168 115,153 " shape="polygon" />
             <area alt="Abdominals" title="Abdominals" href="" coords="138,170,185,270" shape="rect" />
-            <area alt="Biceps" title="Biceps" href="" coords="91,161 113,152 110,173 98,196 86,195 87,176 " shape="polygon" />
-            <area alt="Biceps" title="Biceps" href="" coords="214,152 228,156 235,173 234,197 215,178 " shape="polygon" />
             <area alt="Forearms" title="Forearms" href="" coords="81,204 101,218 69,263 56,257 " shape="polygon" />
             <area alt="Forearms" title="Forearms" href="" coords="240,204 268,258 256,265 220,213 " shape="polygon" />
             <area alt="Shoulders" title="Shoulders" href="" coords="214,130,17" shape="circle" />
