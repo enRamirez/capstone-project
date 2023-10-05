@@ -1,18 +1,43 @@
 import React from 'react';
 import './App.css';
 import Body from './components/Body';
-import { useEffect, useState } from "react"
-// import human from './components/Body.jpg'
-// import human2 from './components/Body2.jpg'
-// import { yellow } from '@mui/material/colors';
+import { useEffect, useState } from "react";
 
+const request = require('request');
 
 function App() {
 
   const [muscleGroups, setMuscleGroup] = useState("")
+
   const muscleFetch = (e) => {
-    console.log(e.target.value)
+    e.preventDefault()
+
+    let selectedMuscleGroup = e.target.title
+    setMuscleGroup(selectedMuscleGroup)
   }
+
+  console.log("Selected Muscle Group:", muscleGroups)
+
+  useEffect(() => {
+    let areas = document.querySelectorAll('area')
+    // console.log("useEffect areas:", areas)
+
+    areas.forEach(a => a.addEventListener("click", muscleFetch))
+
+  },[])
+
+let muscle = muscleGroups;
+request.get({
+  url: 'https://api.api-ninjas.com/v1/exercises?muscle=' + muscle,
+  headers: {
+    'X-Api-Key': '71SAFB+B5it55gL7EqdLdA==fAi7p4KduUXQKLls'
+  },
+}, function(error, response, body) {
+  if(error) return console.error('Request failed:', error);
+  else if(response.statusCode != 200) return console.error('Error:', response.statusCode, body.toString('utf8'));
+  // else console.log()
+});
+  
 
   return (
     <div className='App'>
@@ -40,7 +65,7 @@ function App() {
         </div>
         <div>
           <map name="image_map_muscles">
-            <area alt="Biceps" title="Biceps" href="" coords="91,161 113,152 110,173 98,196 86,195 87,176 " shape="polygon" onClick={console.log('hello')} />
+            <area alt="Biceps" title="Biceps" href="" coords="91,161 113,152 110,173 98,196 86,195 87,176 " shape="polygon" data-muscle="biceps" onClick={muscleFetch()} />
             <area alt="Biceps" title="Biceps" href="" coords="214,152 228,156 235,173 234,197 215,178 " shape="polygon" />
             <area alt="Thighs" title="Legs" href="" coords="165,275,206,379" shape="rect" />
             <area alt="Thighs" title="Legs" href="" coords="118,274,150,381" shape="rect" />

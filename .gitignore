@@ -2,6 +2,7 @@
 
 # dependencies
 
+txt
 .env
 /node_modules
 /.pnp
